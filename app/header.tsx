@@ -39,7 +39,7 @@ function ProfilePhoto({ isDark }: { isDark: boolean }) {
         onMouseLeave={() => setLit(false)}
       >
         <Image
-          src={isDark ? '/img/profile-dark.png' : '/img/profile-light.png'}
+          src={isDark ? '/img/PP.png' : '/img/profile-light.png'}
           alt="Bruce Liu"
           width={128}
           height={128}

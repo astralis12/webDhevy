@@ -22,7 +22,7 @@ import Image from 'next/image'
 import {
   PROJECTS,
   EMAIL,
-  SOCIAL_LINKS,
+  // SOCIAL_LINKS,
   HIGHLIGHTED_AUTHORS,
   PHOTO_GALLERY,
 } from './data'
@@ -421,7 +421,7 @@ export default function Personal() {
             {EMAIL}
           </a>
         </p>
-        <div className="flex items-center justify-start space-x-3">
+        {/* <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
             <MagneticSocialLink
               key={link.label}
@@ -431,7 +431,7 @@ export default function Personal() {
               {link.label}
             </MagneticSocialLink>
           ))}
-        </div>
+        </div> */}
       </motion.section>
 
       <motion.section

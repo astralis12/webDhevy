@@ -46,7 +46,7 @@ export const PROJECTS: Project[] = [
     image: '/img/projects/placeholder.jpg',
     selected: true,
     links: {
-      Journal: 'https://doi.org/10.12928/jbns.v5i1.12972', // key without quotes
+      Journal: 'https://doi.org/10.12928/jbns.v5i1.12972',
       pdf: '/pdf/placeholder.pdf',
     },
     id: 'ethnobotany-kedungpoh',
@@ -121,23 +121,23 @@ export const PROJECTS: Project[] = [
 
 export const BLOG_POSTS: BlogPost[] = []
 
-export const SOCIAL_LINKS: SocialLink[] = [
-  {
-    label: 'CV',
-    link: '/pdf/placeholder.pdf',
-    icon: 'FileText',
-  },
-  {
-    label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/mahadhevy',
-    icon: 'Linkedin',
-  },
-  {
-    label: 'Email',
-    link: 'mailto:vidhantyka@gmail.com',
-    icon: 'Mail',
-  },
-]
+// export const SOCIAL_LINKS: SocialLink[] = [
+//   {
+//     label: 'CV',
+//     link: '/pdf/placeholder.pdf',
+//     icon: 'FileText',
+//   },
+//   {
+//     label: 'LinkedIn',
+//     link: 'https://www.linkedin.com/in/mahadhevy',
+//     icon: 'Linkedin',
+//   },
+//   {
+//     label: 'Email',
+//     link: 'mailto:vidhantyka@gmail.com',
+//     icon: 'Mail',
+//   },
+// ]
 
 export const EMAIL = 'vidhantyka@gmail.com'
 

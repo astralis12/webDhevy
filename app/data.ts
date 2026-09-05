@@ -35,19 +35,25 @@ export const HIGHLIGHTED_AUTHORS = ['Mahadhevy', 'Vidhantyka']
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Ethnopharmacological Study of Medicinal Plants in Kedungpoh Village, Gunungkidul',
-    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka', 'Supervisor Name', 'Co-author Name'], // Update with actual names
+    title:
+      'Ethnopharmacological Study of Medicinal Plants in Kedungpoh Village, Gunungkidul',
+    authors: [
+      'K.H. Mahadhevy Ryrathna Vidhantyka',
+      'Supervisor Name',
+      'Co-author Name',
+    ], // Update with actual names
     year: 2025,
     image: '/img/projects/placeholder.jpg', // Placeholder - add your image later
     selected: true,
     links: {
-      'Journal': 'https://doi.org/10.12928/jbns.v5i1.12972',
+      Journal: 'https://doi.org/10.12928/jbns.v5i1.12972',
       pdf: '/pdf/placeholder.pdf', // Placeholder - upload your PDF later
     },
     id: 'ethnobotany-kedungpoh',
   },
   {
-    title: 'Existence of Lithocarpus elegans and Engelhardia spicata in Dieng Plateau',
+    title:
+      'Existence of Lithocarpus elegans and Engelhardia spicata in Dieng Plateau',
     authors: ['K.H. Mahadhevy Ryrathna Vidhantyka'],
     year: 2026,
     image: '/img/projects/placeholder.jpg',
@@ -59,7 +65,10 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'Inventory and Carbon Stock Analysis at Wanagama Forest',
-    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka', 'Rumah Karbon Indonesia Team'],
+    authors: [
+      'K.H. Mahadhevy Ryrathna Vidhantyka',
+      'Rumah Karbon Indonesia Team',
+    ],
     year: 2026,
     image: '/img/projects/placeholder.jpg',
     selected: false,
@@ -69,8 +78,12 @@ export const PROJECTS: Project[] = [
     id: 'wanagama-carbon',
   },
   {
-    title: 'Spatial Analysis and Ethnobotany of Transmigrant Communities in Kapuas Hulu',
-    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka', 'Tim Ekspedisi Patriot 2025'],
+    title:
+      'Spatial Analysis and Ethnobotany of Transmigrant Communities in Kapuas Hulu',
+    authors: [
+      'K.H. Mahadhevy Ryrathna Vidhantyka',
+      'Tim Ekspedisi Patriot 2025',
+    ],
     year: 2025,
     image: '/img/projects/placeholder.jpg',
     selected: false,
@@ -92,7 +105,10 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'Monitoring of Cyornis banyumas (Sikatan Cacing) Nesting Behavior',
-    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka', 'Endemic Indonesia Society'],
+    authors: [
+      'K.H. Mahadhevy Ryrathna Vidhantyka',
+      'Endemic Indonesia Society',
+    ],
     year: 2026,
     image: '/img/projects/placeholder.jpg',
     selected: false,

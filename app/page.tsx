@@ -117,72 +117,29 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-muted-foreground">
-            Hi! <WaveEmoji /> I&apos;m a Research Scientist at{' '}
-            <AnimatedLink
-              href="https://research.adobe.com/"
-              isStatic={true}
-              imageSrc="/img/adobe-building.jpg"
-            >
-              Adobe Research
-            </AnimatedLink>
-            . Recently, I&apos;m exploring autonomous agents that develop their
-            own <TasteWord />.
+            Hi! <WaveEmoji /> I'm a recent graduate from Universitas Gadjah Mada,
+            earning my Bachelor's degree in Biology with a GPA of 3.86/4.00.
+            My research focuses on socio-ecology, ethnobotany, and conservation.
           </p>
           <br />
           <p className="text-muted-foreground">
-            Previously, I received my Ph.D. from{' '}
-            <AnimatedLink href="https://hci.ucla.edu/#team">
-              UCLA HCI lab
-            </AnimatedLink>{' '}
-            advised by Professor{' '}
-            <AnimatedLink href="https://hci.prof/">
-              Xiang &lsquo;Anthony&rsquo; Chen
-            </AnimatedLink>
-            . My work was recognized by an{' '}
-            <AnimatedLink
-              href="https://www.sciencehub.ucla.edu/2023-amazon-fellows/"
-              isStatic={true}
-              imageSrc="/img/amazon-fellowship.png"
-            >
-              Amazon Ph.D. Fellowship
-            </AnimatedLink>
-            , an{' '}
-            <AnimatedLink
-              href="https://dl.acm.org/doi/10.1145/3526113.3545703"
-              isStatic={true}
-              imageSrc="/img/uist-best-paper.png"
-            >
-              ACM UIST Best Paper Award
-            </AnimatedLink>
-            , and two{' '}
-            <AnimatedLink
-              href="https://dl.acm.org/doi/10.1145/3613904.3642065"
-              isStatic={true}
-              imageSrc="/img/chi-best-paper.png"
-            >
-              ACM CHI Best Paper Honorable Mentions
-            </AnimatedLink>
-            . I&apos;ve also interned at{' '}
-            <CompanyTag
-              icon={GoogleIcon}
-              particleColors={['#4285F4', '#EA4335', '#FBBC05', '#34A853']}
-            >
-              Google
-            </CompanyTag>
-            ,{' '}
-            <CompanyTag icon={SiMeta} color="#0866FF">
-              Meta
-            </CompanyTag>
-            , and{' '}
-            <CompanyTag icon={SiSnapchat} color="#FFFC00">
-              Snap
-            </CompanyTag>
-            .
+            I have hands-on experience in field sampling, species identification,
+            data collection, and analysis using R-Studio and QGIS. I've led and
+            contributed to multiple research projects, internships, and fieldwork
+            expeditions across Indonesia.
           </p>
           <br />
           <p className="text-muted-foreground">
-            Here&apos;s my{' '}
-            <AnimatedLink href="/pdf/cv.pdf" showPreview={false}>
+            Beyond research, I bring strong organizational skills from my involvement
+            in 3 organizations, 4 research projects, 2 internships, 5 committee roles,
+            and as a laboratory assistant and Officer for the Patriot 2025 Expedition Team.
+            I'm experienced in team leadership, structured time management, persuasive
+            communication, and negotiation.
+          </p>
+          <br />
+          <p className="text-muted-foreground">
+            Here's my{' '}
+            <AnimatedLink href="/pdf/CV_Mahadhevy_Manka.pdf" showPreview={false}>
               CV
               <motion.span
                 className="inline-block"

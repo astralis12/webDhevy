@@ -24,9 +24,11 @@ type SocialLink = {
 
 export const SITE_URL = 'https://vidhantyka.my.id'
 
+// app/data.ts
 export const PERSONAL_INFO = {
   name: {
     english: 'K.H. Mahadhevy Ryrathna Vidhantyka',
+    chinese: '', // add this line (even empty)
   },
   title: 'Fresh Graduate in Biology | Ecology & Conservation Researcher',
 }

@@ -1,6 +1,6 @@
 'use client'
+
 import { TextScramble } from '@/components/ui/text-scramble'
-import { CompanyTag, AdobeIcon } from '@/components/ui/company-tag'
 import { Tilt } from '@/components/ui/tilt'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
@@ -12,10 +12,6 @@ import {
 } from 'motion/react'
 import { PERSONAL_INFO } from './data'
 
-// The profile photo already tilts toward the cursor; this adds a soft sheen
-// that tracks the pointer across its surface, so the tilt reads as a real,
-// light-catching object rather than a flat plane. Pointer-driven only —
-// nothing animates on its own — so it stays calm at rest.
 function ProfilePhoto({ isDark }: { isDark: boolean }) {
   const [lit, setLit] = useState(false)
   const x = useMotionValue(50)
@@ -40,7 +36,7 @@ function ProfilePhoto({ isDark }: { isDark: boolean }) {
       >
         <Image
           src={isDark ? '/img/PP.png' : '/img/profile-light.png'}
-          alt="Bruce Liu"
+          alt="Profile photo"
           width={128}
           height={128}
           className="h-28 w-28 rounded-md object-cover"
@@ -59,23 +55,17 @@ function ProfilePhoto({ isDark }: { isDark: boolean }) {
 
 export function Header() {
   const [isDark, setIsDark] = useState(false)
-  const [isChinese, setIsChinese] = useState(false)
 
   useEffect(() => {
-    // Check initial theme
     const checkTheme = () => {
       setIsDark(document.documentElement.classList.contains('dark'))
     }
-
     checkTheme()
-
-    // Watch for theme changes
     const observer = new MutationObserver(checkTheme)
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ['class'],
     })
-
     return () => observer.disconnect()
   }, [])
 
@@ -90,49 +80,19 @@ export function Header() {
           <ProfilePhoto isDark={isDark} />
         </motion.div>
         <div>
-          <div
-            onClick={() => setIsChinese(!isChinese)}
-            className="text-foreground inline-block cursor-pointer font-medium"
-          >
-            <TextScramble
-              characterSet={`${PERSONAL_INFO.name.chinese}${PERSONAL_INFO.name.english}`}
-              key={isChinese ? 'chinese' : 'english'}
-            >
-              {isChinese
-                ? PERSONAL_INFO.name.chinese
-                : PERSONAL_INFO.name.english}
+          <div className="text-foreground inline-block font-medium">
+            <TextScramble characterSet={PERSONAL_INFO.name.english}>
+              {PERSONAL_INFO.name.english}
             </TextScramble>
           </div>
-          {(() => {
-            const title = PERSONAL_INFO.title
-            const i = title.indexOf('Adobe')
-            if (i === -1) {
-              return (
-                <TextScramble
-                  className="text-muted-foreground"
-                  characterSet={title.replace(/\s/g, '')}
-                >
-                  {title}
-                </TextScramble>
-              )
-            }
-            const before = title.slice(0, i)
-            const after = title.slice(i + 'Adobe'.length)
-            return (
-              <p className="text-muted-foreground">
-                <TextScramble
-                  as="span"
-                  characterSet={before.replace(/\s/g, '')}
-                >
-                  {before}
-                </TextScramble>
-                <CompanyTag icon={AdobeIcon} color="#FA0F00">
-                  Adobe
-                </CompanyTag>
-                {after}
-              </p>
-            )
-          })()}
+          <p className="text-muted-foreground">
+            <TextScramble
+              as="span"
+              characterSet={PERSONAL_INFO.title.replace(/\s/g, '')}
+            >
+              {PERSONAL_INFO.title}
+            </TextScramble>
+          </p>
         </div>
       </div>
     </header>

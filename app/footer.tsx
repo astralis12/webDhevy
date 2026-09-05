@@ -107,7 +107,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="hover:text-foreground underline-offset-2 transition-colors"
           >
-            Brucespage Template
+            God Bless 
             <ArrowUpRightIcon className="inline h-3 w-3" />
           </a>
         </TextLoop>

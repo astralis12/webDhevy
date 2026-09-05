@@ -41,19 +41,18 @@ export const PROJECTS: Project[] = [
       'K.H. Mahadhevy Ryrathna Vidhantyka',
       'Supervisor Name',
       'Co-author Name',
-    ], // Update with actual names
+    ],
     year: 2025,
-    image: '/img/projects/placeholder.jpg', // Placeholder - add your image later
+    image: '/img/projects/placeholder.jpg',
     selected: true,
     links: {
-      Journal: 'https://doi.org/10.12928/jbns.v5i1.12972',
-      pdf: '/pdf/placeholder.pdf', // Placeholder - upload your PDF later
+      Journal: 'https://doi.org/10.12928/jbns.v5i1.12972', // key without quotes
+      pdf: '/pdf/placeholder.pdf',
     },
     id: 'ethnobotany-kedungpoh',
   },
   {
-    title:
-      'Existence of Lithocarpus elegans and Engelhardia spicata in Dieng Plateau',
+    title: 'Existence of Lithocarpus elegans and Engelhardia spicata in Dieng Plateau',
     authors: ['K.H. Mahadhevy Ryrathna Vidhantyka'],
     year: 2026,
     image: '/img/projects/placeholder.jpg',
@@ -72,9 +71,7 @@ export const PROJECTS: Project[] = [
     year: 2026,
     image: '/img/projects/placeholder.jpg',
     selected: false,
-    links: {
-      // Add report link if available later
-    },
+    links: {},
     id: 'wanagama-carbon',
   },
   {
@@ -87,9 +84,7 @@ export const PROJECTS: Project[] = [
     year: 2025,
     image: '/img/projects/placeholder.jpg',
     selected: false,
-    links: {
-      // Add report or map gallery link later
-    },
+    links: {},
     id: 'kapuas-hulu',
   },
   {
@@ -98,9 +93,7 @@ export const PROJECTS: Project[] = [
     year: 2025,
     image: '/img/projects/placeholder.jpg',
     selected: false,
-    links: {
-      // Add poster or report link later
-    },
+    links: {},
     id: 'merapi-orchids',
   },
   {
@@ -112,9 +105,7 @@ export const PROJECTS: Project[] = [
     year: 2026,
     image: '/img/projects/placeholder.jpg',
     selected: false,
-    links: {
-      // Add report link later
-    },
+    links: {},
     id: 'bird-monitoring',
   },
   {
@@ -123,25 +114,22 @@ export const PROJECTS: Project[] = [
     year: 2024,
     image: '/img/projects/placeholder.jpg',
     selected: false,
-    links: {
-      // Add report link later
-    },
+    links: {},
     id: 'paliyan-inventory',
   },
 ]
 
-// Blog is disabled - no posts for now
 export const BLOG_POSTS: BlogPost[] = []
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'CV',
-    link: '/pdf/placeholder.pdf', // Upload your CV as CV_Mahadhevy_Manka.pdf
+    link: '/pdf/placeholder.pdf',
     icon: 'FileText',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/mahadhevy', // Update with your actual LinkedIn URL
+    link: 'https://www.linkedin.com/in/mahadhevy',
     icon: 'Linkedin',
   },
   {
@@ -153,9 +141,4 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const EMAIL = 'vidhantyka@gmail.com'
 
-// Gallery placeholders - add your image filenames here when ready
-// Place actual images in public/img/photos/
-export const PHOTO_GALLERY = [
-  // Add your filenames here, e.g. 'fieldwork1.jpg', 'conference.png'
-  // For now, leave empty or add a placeholder
-]
+export const PHOTO_GALLERY: string[] = []

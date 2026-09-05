@@ -52,7 +52,8 @@ export const PROJECTS: Project[] = [
     id: 'ethnobotany-kedungpoh',
   },
   {
-    title: 'Existence of Lithocarpus elegans and Engelhardia spicata in Dieng Plateau',
+    title:
+      'Existence of Lithocarpus elegans and Engelhardia spicata in Dieng Plateau',
     authors: ['K.H. Mahadhevy Ryrathna Vidhantyka'],
     year: 2026,
     image: '/img/projects/placeholder.jpg',

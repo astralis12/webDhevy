@@ -140,4 +140,3 @@ public/
 ---
 
 Built with [Next.js](https://nextjs.org) and [React](https://react.dev) • Based on [Nim](https://vercel.com/templates/portfolio/nim-minimalist-personal-site) template
-

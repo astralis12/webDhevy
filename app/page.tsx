@@ -93,7 +93,8 @@ function MagneticSocialLink({
         rel="noopener noreferrer"
         className="group bg-secondary text-secondary-foreground hover:bg-foreground hover:text-background relative inline-flex shrink-0 items-center gap-1.5 rounded-full px-2.5 py-1 text-sm transition-all duration-200 active:scale-95"
       >
-        <IconComponent className="h-3.5 w-3.5" />
+        {/* <IconComponent className="h-3.5 w-3.5" /> */}
+        <span className="text-xs">{icon}</span>
         {children}
       </a>
     </Magnetic>

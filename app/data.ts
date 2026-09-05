@@ -22,344 +22,124 @@ type SocialLink = {
   icon: string
 }
 
-export const SITE_URL = 'https://liubruce.me'
+export const SITE_URL = 'https://vidhantyka.my.id'
 
 export const PERSONAL_INFO = {
   name: {
-    english: 'Bruce Liu',
-    chinese: '刘星宇',
+    english: 'K.H. Mahadhevy Ryrathna Vidhantyka',
   },
-  title: 'Research Scientist @ Adobe',
+  title: 'Fresh Graduate in Biology | Ecology & Conservation Researcher',
 }
 
-export const HIGHLIGHTED_AUTHORS = ['Xingyu Bruce Liu', 'Xingyu Liu']
+export const HIGHLIGHTED_AUTHORS = ['Mahadhevy', 'Vidhantyka']
 
 export const PROJECTS: Project[] = [
   {
-    title: 'A Text-Native Interface for Generative Video Authoring',
-    authors: ['Xingyu Bruce Liu', 'Mira Dontcheva', 'Dingzeyu Li'],
-    year: 2026,
-    image: '/img/projects/liu2026doki.png',
+    title: 'Ethnopharmacological Study of Medicinal Plants in Kedungpoh Village, Gunungkidul',
+    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka', 'Supervisor Name', 'Co-author Name'], // Update with actual names
+    year: 2025,
+    image: '/img/projects/placeholder.jpg', // Placeholder - add your image later
     selected: true,
     links: {
-      'UIST 2026': 'https://doi.org/10.1145/3830398.3830715',
-      pdf: '/pdf/projects/liu2026doki.pdf',
-      video: 'https://www.youtube.com/watch?v=5ARvAi6WyFU',
+      'Journal': 'https://doi.org/10.12928/jbns.v5i1.12972',
+      pdf: '/pdf/placeholder.pdf', // Placeholder - upload your PDF later
     },
-    id: 'liu2026doki',
+    id: 'ethnobotany-kedungpoh',
   },
   {
-    title:
-      'Behavioral Indicators of Overreliance During Interaction with Conversational Language Models',
-    authors: [
-      'Chang Liu',
-      'Qinyi Zhou',
-      'Xinjie Shen',
-      'Xingyu Bruce Liu',
-      'Tongshuang Wu',
-      'Xiang Anthony Chen',
-    ],
+    title: 'Existence of Lithocarpus elegans and Engelhardia spicata in Dieng Plateau',
+    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka'],
     year: 2026,
-    image: '/img/projects/liu2026overreliance.png',
-    selected: false,
-    links: {
-      'CHI 2026': 'https://doi.org/10.1145/3772318.3790332',
-      pdf: '/pdf/projects/liu2026overreliance.pdf',
-    },
-    id: 'liu2026overreliance',
-  },
-  {
-    title: 'Thought as a Substrate in Human-AI Interaction',
-    authors: ['Xingyu Bruce Liu'],
-    year: 2025,
-    image: '/img/projects/liu2025interacting.png',
-    selected: false,
-    links: {
-      'UIST 2025 DC': 'https://dl.acm.org/doi/10.1145/3746058.3758466',
-      pdf: '/pdf/projects/liu2025uistdc.pdf',
-    },
-    id: 'liu2025uistdc',
-  },
-  {
-    title: 'Proactive Conversational Agents with Inner Thoughts',
-    authors: [
-      'Xingyu Bruce Liu',
-      'Shitao Fang',
-      'Weiyan Shi',
-      'Chien-Sheng Wu',
-      'Takeo Igarashi',
-      'Xiang Anthony Chen',
-    ],
-    year: 2025,
-    image: '/img/projects/liu2025inner.png',
+    image: '/img/projects/placeholder.jpg',
     selected: true,
     links: {
-      'CHI 2025': 'https://doi.org/10.1145/3706598.3713760',
-      pdf: '/pdf/projects/liu2025inner.pdf',
-      code: 'https://github.com/xybruceliu/thoughtful-agents',
+      pdf: '/pdf/placeholder.pdf',
     },
-    id: 'liu2025inner',
+    id: 'dieng-thesis',
   },
   {
-    title:
-      'Human I/O: Towards a Unified Approach to Detecting Situational Impairments',
-    authors: [
-      'Xingyu Bruce Liu',
-      'Jiaohao Nick Li',
-      'David Kim',
-      'Xiang Anthony Chen',
-      'Ruofei Du',
-    ],
+    title: 'Inventory and Carbon Stock Analysis at Wanagama Forest',
+    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka', 'Rumah Karbon Indonesia Team'],
+    year: 2026,
+    image: '/img/projects/placeholder.jpg',
+    selected: false,
+    links: {
+      // Add report link if available later
+    },
+    id: 'wanagama-carbon',
+  },
+  {
+    title: 'Spatial Analysis and Ethnobotany of Transmigrant Communities in Kapuas Hulu',
+    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka', 'Tim Ekspedisi Patriot 2025'],
+    year: 2025,
+    image: '/img/projects/placeholder.jpg',
+    selected: false,
+    links: {
+      // Add report or map gallery link later
+    },
+    id: 'kapuas-hulu',
+  },
+  {
+    title: 'Inventory of Endemic Orchids in Mount Merapi National Park',
+    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka'],
+    year: 2025,
+    image: '/img/projects/placeholder.jpg',
+    selected: false,
+    links: {
+      // Add poster or report link later
+    },
+    id: 'merapi-orchids',
+  },
+  {
+    title: 'Monitoring of Cyornis banyumas (Sikatan Cacing) Nesting Behavior',
+    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka', 'Endemic Indonesia Society'],
+    year: 2026,
+    image: '/img/projects/placeholder.jpg',
+    selected: false,
+    links: {
+      // Add report link later
+    },
+    id: 'bird-monitoring',
+  },
+  {
+    title: 'Vegetation and Soil Insect Inventory at Paliyan Wildlife Reserve',
+    authors: ['K.H. Mahadhevy Ryrathna Vidhantyka', 'BKSDA DIY'],
     year: 2024,
-    image: '/img/projects/liu2024humanio.png',
-    award: 'Best Paper Honorable Mention',
-    selected: true,
-    links: {
-      'CHI 2024': 'https://doi.org/10.1145/3613904.3642065',
-      pdf: '/pdf/projects/liu2024humanio.pdf',
-      code: 'https://github.com/google/humanio',
-      blog: 'https://research.google/blog/human-io-detecting-situational-impairments-with-large-language-models/',
-      video: 'https://www.youtube.com/watch?v=LTXe3RCHd6I',
-    },
-    id: 'liu2024humanio',
-  },
-  {
-    title:
-      'Experiencing Visual Captions: Augmented Communication with Real-Time Visuals Using Large Language Models',
-    authors: [
-      'Xingyu Bruce Liu',
-      'Vladimir Kirilyuk',
-      'Xiuxiu Yuan',
-      'Peggy Chi',
-      'Alex Olwal',
-      'Xiang Anthony Chen',
-      'Ruofei Du',
-    ],
-    year: 2023,
-    image: '/img/projects/liu2023vcdemo.png',
-    links: {
-      'UIST 2023 Demo': 'https://doi.org/10.1145/3586182.3615978',
-    },
-    id: 'liu2023vcdemo',
-  },
-  {
-    title:
-      'Social Wormholes: Exploring Preferences and Opportunities for Distributed and Physically-Grounded Social Connections',
-    authors: [
-      'Xingyu Bruce Liu',
-      'Joanne Leong',
-      'Yuanyang Teng',
-      'Hanseul Jun',
-      'Sven Kratz',
-      'Yu Jiang Tham',
-      'Andrés Monroy-Hernández',
-      'Brian A. Smith',
-      'Rajan Vaish',
-    ],
-    year: 2023,
-    image: '/img/projects/liu2023social.png',
-    links: {
-      'CSCW 2023': 'https://doi.org/10.1145/3610208',
-    },
-    id: 'liu2023social',
-  },
-  {
-    title:
-      'Visual Captions: Augmenting Verbal Communication with On-the-fly Visuals',
-    authors: [
-      'Xingyu Bruce Liu',
-      'Vladimir Kirilyuk',
-      'Xiuxiu Yuan',
-      'Alex Olwal',
-      'Peggy Chi',
-      'Xiang Anthony Chen',
-      'Ruofei Du',
-    ],
-    year: 2023,
-    image: '/img/projects/liu2023visualcaptions.png',
-    selected: true,
-    links: {
-      'CHI 2023': 'https://dl.acm.org/doi/10.1145/3544548.3581566',
-      pdf: '/pdf/projects/liu2023visual.pdf',
-      code: 'https://github.com/google/archat',
-      blog: 'https://blog.research.google/2023/06/visual-captions-using-large-language.html',
-      video: 'https://youtu.be/sL_YeHtQt44',
-    },
-    id: 'liu2023visualcaptions',
-  },
-  {
-    title:
-      'Rapsai: Accelerating Machine Learning Prototyping of Multimedia Applications Through Visual Programming',
-    authors: [
-      'Ruofei Du',
-      'Na Li',
-      'Jing Jin',
-      'Michelle Carney',
-      'Scott Miles',
-      'Maria Kleiner',
-      'Xiuxiu Yuan',
-      'Yinda Zhang',
-      'Anuva Kulkarni',
-      'Xingyu Bruce Liu',
-      'Sergio Escolano',
-      'Abhishek Kar',
-      'Alex Olwal',
-      'Ping Yu',
-      'Ram Iyengar',
-      'Adarsh Kowdle',
-    ],
-    year: 2023,
-    image: '/img/projects/du2023rapsai.png',
-    award: 'Best Paper Honorable Mention',
-    links: {
-      'CHI 2023': 'https://dl.acm.org/doi/10.1145/3544548.3581338',
-      pdf: '/pdf/projects/du2023rapsai.pdf',
-      video: 'https://youtu.be/mQ5mvAbZYvc',
-    },
-    id: 'du2023rapsai',
-  },
-  {
-    title: 'Modeling and Improving Text Stability in Live Captions',
-    authors: [
-      'Xingyu Bruce Liu',
-      'Jun Zhang',
-      'Leonardo Ferrer',
-      'Susan Xu',
-      'Vikas Bahirwani',
-      'Boris Smus',
-      'Alex Olwal',
-      'Ruofei Du',
-    ],
-    year: 2023,
-    image: '/img/projects/liu2023modeling.png',
-    links: {
-      'CHI 2023 LBW': 'https://doi.org/10.1145/3544549.3585609',
-      pdf: '/pdf/projects/liu2023modeling.pdf',
-      video: 'https://youtu.be/Indi_RwODS8',
-    },
-    id: 'liu2023modeling',
-  },
-  {
-    title:
-      'CrossA11y: Identifying Video Accessibility Issues via Cross-Modal Grounding',
-    authors: [
-      'Xingyu Bruce Liu',
-      'Ruolin Wang',
-      'Dingzeyu Li',
-      'Xiang Anthony Chen',
-      'Amy Pavel',
-    ],
-    year: 2022,
-    image: '/img/projects/liu2022crossa11y.png',
-    award: 'Best Paper Award',
-    selected: true,
-    links: {
-      'UIST 2022': 'https://doi.org/10.1145/3526113.3545703',
-      pdf: '/pdf/projects/liu2022crossa11y.pdf',
-      video: 'https://youtu.be/HDqjnHOZ7J8',
-    },
-    id: 'liu2022crossa11y',
-  },
-  {
-    title:
-      'What Makes Videos Accessible to Blind and Visually Impaired People?',
-    authors: [
-      'Xingyu Bruce Liu',
-      'Patrick Carrington',
-      'Xiang Anthony Chen',
-      'Amy Pavel',
-    ],
-    year: 2021,
-    image: '/img/projects/liu2021what.png',
+    image: '/img/projects/placeholder.jpg',
     selected: false,
     links: {
-      'CHI 2021': 'https://doi.org/10.1145/3411764.3445233',
-      pdf: '/pdf/projects/liu2021what.pdf',
-      video: 'https://youtu.be/n2enrJJZdTs',
+      // Add report link later
     },
-    id: 'liu2021what',
-  },
-  {
-    title: 'Making Memes Accessible',
-    authors: [
-      'Cole Gleason',
-      'Amy Pavel',
-      'Xingyu Bruce Liu',
-      'Patrick Carrington',
-      'Lydia B. Chilton',
-      'Jeffrey P. Bigham',
-    ],
-    year: 2019,
-    image: '/img/projects/gleason2019making.png',
-    links: {
-      'ASSETS 2019': 'https://doi.org/10.1145/3308561.3353792',
-      pdf: '/pdf/projects/gleason2019making.pdf',
-      blog: 'https://time.com/5759721/meme-accessibility-blind/',
-    },
-    id: 'gleason2019making',
+    id: 'paliyan-inventory',
   },
 ]
 
-// Blog is currently disabled (see the commented-out section in page.tsx).
-// To publish a post: add an entry here and create app/blog/<slug>/page.mdx
-// (see app/blog/example-mdx-metadata/page.mdx for a reference).
-export const BLOG_POSTS: BlogPost[] = [
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description:
-      'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-1',
-  },
-]
+// Blog is disabled - no posts for now
+export const BLOG_POSTS: BlogPost[] = []
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'CV',
-    link: '/pdf/cv.pdf',
+    link: '/pdf/placeholder.pdf', // Upload your CV as CV_Mahadhevy_Manka.pdf
     icon: 'FileText',
   },
   {
-    label: 'Twitter',
-    link: 'https://x.com/liu_xingyu',
-    icon: 'Twitter',
-  },
-  {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/xingyuliu1997/',
+    link: 'https://www.linkedin.com/in/mahadhevy', // Update with your actual LinkedIn URL
     icon: 'Linkedin',
   },
   {
-    label: 'Scholar',
-    link: 'https://scholar.google.com/citations?user=CTDSuK0AAAAJ',
-    icon: 'GraduationCap',
+    label: 'Email',
+    link: 'mailto:vidhantyka@gmail.com',
+    icon: 'Mail',
   },
 ]
 
-export const EMAIL = 'xingyul@adobe.com'
+export const EMAIL = 'vidhantyka@gmail.com'
 
+// Gallery placeholders - add your image filenames here when ready
+// Place actual images in public/img/photos/
 export const PHOTO_GALLERY = [
-  '000006.jpg',
-  '000041-2.jpg',
-  '000044-2.jpg',
-  '000048-2.jpg',
-  '000049.jpg',
-  '000060-3.jpg',
-  '000063110001.jpg',
-  '000063110005.jpg',
-  '000063110002.jpg',
-  '000063110027.jpg',
-  '000068.jpg',
-  '000209220013.jpg',
-  '000209220036.jpg',
-  '000209240034.jpg',
-  '000209310006.jpg',
-  '000209310013.jpg',
-  '000209310024.jpg',
-  '000282940011.jpg',
-  '000379820033.jpg',
-  '000379830014.jpg',
-  '34fa1cee0s9a874595ef9acb0dbbb712.jpeg',
-  '8f385aaedk695be0b7da3713f974dee2.jpeg',
-  '94a8a218dv08f7da0a6e775e45a6192e.jpeg',
+  // Add your filenames here, e.g. 'fieldwork1.jpg', 'conference.png'
+  // For now, leave empty or add a placeholder
 ]
